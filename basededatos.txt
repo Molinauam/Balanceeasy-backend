@@ -1,0 +1,14 @@
+CREATE DATABASE BalanceEasy
+USE BalanceEasy
+
+CREATE TABLE usuarios(
+	id int AUTO_INCREMENT PRIMARY KEY,
+    nombre_completo varchar(255) NOT NULL,
+    tipo_documento varchar(255) NOT NULL,
+    documento VARCHAR(11) NOT NULL,
+    contrasena varchar(255) NOT NULL,
+    rol varchar(25) NOT NULL,
+    estado BOOLEAN NOT NULL,
+    correo_electronico varchar(255),
+    numero_de_telefo varchar(25)
+);
